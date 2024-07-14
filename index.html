@@ -3,6 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link
@@ -65,17 +83,23 @@
       </nav>
     </header>
     <main class="main">
-      <section class="promo">
+      <section class="promo container">
         <div class="overlay"></div>
-        <video id="background-video" autoplay muted loop poster="cake.jpg">
+        <video
+          id="background-video"
+          autoplay
+          muted
+          loop
+          poster="./assets/logo/logo.png"
+        >
           <source src="assets/video/promo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <div class="promo-info container">
+        <div class="promo-info col-lg-6">
           <h1>ENGINEERING AND DESIGN CONSULTANCY</h1>
           <p>
-            we offer a comprehensive range of engineering design and consultancy
+            We offer a comprehensive range of engineering design and consultancy
             services to meet the demands of today's dynamic industries.
           </p>
           <a href="#">Discover more</a>
@@ -83,7 +107,7 @@
       </section>
 
       <section class="about-us">
-        <p class="about-us_info container">
+        <p class="about-us_info container" data-aos="zoom-in-up">
           GED Consultants, founded in 2008, delivers top-tier engineering
           solutions across diverse sectors with expertise tailored to your
           unique project requirements.
@@ -97,6 +121,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
