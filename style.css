@@ -1,0 +1,106 @@
+/* .navbar {
+    background: linear-gradient(rgb(178, 245, 243), rgba(1, 23, 39, 0.7));
+    /* background-color: transparent !important;
+    border-color: transparent !important; 
+}
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,900&family=Space+Grotesk:wght@300;400;500&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+.navbar {
+  background-color: rgba(225, 225, 225, 0.7);
+}
+.navbar .navbar-nav > li > a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 450;
+}
+
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > li > a:hover {
+  color: rgb(45, 39, 105);
+}
+
+.hover-underline-animation {
+  display: inline-block; /* Display inline block */
+  position: relative; /* Set position relative */
+  color: #0087ca; /* Set text color */
+}
+
+.hover-underline-animation:after {
+  content: ""; /* Add content after the element */
+  position: absolute; /* Position absolute for pseudo-element */
+  width: 100%; /* Full width */
+  transform: scaleX(0); /* Initial scale of 0 for underline effect */
+  height: 2px; /* Height of the underline */
+  bottom: 0; /* Align to bottom */
+  left: 0; /* Align to left */
+  background-color: #0087ca; /* Background color of the underline */
+  transform-origin: bottom right; /* Set transform origin */
+  transition: transform 0.25s ease-out; /* Transition effect for the underline */
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1); /* Scale the underline on hover */
+  transform-origin: bottom left; /* Set transform origin */
+}
+.promo {
+  color: #fff;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.promo-info {
+  position: relative;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  width: 500px;
+  display: flex;
+}
+.promo-info a {
+  font-style: 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 8px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(72, 85, 123, 0.7), rgba(1, 23, 39, 0.6));
+}
+.promo-info h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 60px;
+}
+
+.promo-info p {
+  font-optical-sizing: 16px;
+}
+.about-us_info {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 80px 0px 80px;
+  border-radius: 10px;
+}
+
+.about-us p {
+  text-align: center;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+}
