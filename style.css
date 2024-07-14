@@ -60,7 +60,7 @@ body {
   top: 0;
   bottom: 0;
   z-index: -1;
-  filter: opacity(0.8) grayscale(70%) url(dark-blue-sepia);
+  filter: grayscale(70%);
 }
 .promo-info {
   background-color: #fff;
@@ -80,7 +80,7 @@ body {
 }
 .promo-info h1 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 3.75rem;
+  font-size: 3rem;
 }
 
 .promo-info p {
