@@ -23,6 +23,12 @@ body {
 .navbar .navbar-nav > li > a:hover {
   color: #0087ca;
 }
+.custom_toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 136, 204, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom_toggler.navbar-toggler {
+  border-color: rgb(0, 136, 204);
+}
 
 .hover-underline-animation {
   display: inline-block; /* Display inline block */
@@ -60,7 +66,7 @@ body {
   top: 0;
   bottom: 0;
   z-index: -1;
-  filter: grayscale(70%);
+  filter: grayscale(0.7);
 }
 .promo-info {
   background-color: #fff;
@@ -98,6 +104,6 @@ body {
   color: #fff;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 25% 25% 25% 25% / 50% 0% 50% 0%;
 }
