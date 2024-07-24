@@ -1,24 +1,49 @@
-@media (max-width: 335px) {
-  .logo {
-    width: 110.5px;
-    height: 27.5px;
-  }
-  .about_us__info {
-    font-size: 0.2rem;
-  }
-}
 @media (max-width: 220px) {
-  #background-video {
-    display: none;
-  }
-  body {
-    background: url("/assets/video/cover.png") no-repeat;
-    background-size: cover;
-  }
   .promo-info {
     padding: 5%;
   }
   .promo-info h1 {
-    font-size: 1rem;
+    font-size: 12px;
+    font-weight: 300;
   }
+}
+
+@media (max-width: 550px) {
+  .promo__items {
+    flex-direction: column;
+  }
+  .promo-info h1 {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .promo-info p {
+    font-size: 0.5rem;
+  }
+}
+.card {
+  background-size: cover;
+}
+.text {
+  height: 240px;
+  width: 100px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.service_1 {
+  background-image: url(/assets/img/1.jpg);
+}
+.service_2 {
+  background-image: url(/assets/img/2.jpg);
+}
+.service_3 {
+  background-image: url(/assets/img/3.jpg);
+}
+.service_4 {
+  background-image: url(/assets/img/4.jpg);
+}
+.service_5 {
+  background-image: url(/assets/img/5.jpg);
+}
+.service_6 {
+  background-image: url(/assets/img/6.jpg);
 }

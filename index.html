@@ -26,7 +26,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/media.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -92,42 +94,63 @@
     </header>
     <main class="main">
       <section class="promo container">
-        <video
-          id="background-video"
-          autoplay
-          loop
-          muted
-          poster="/assets/video/promo.mp4"
-        >
-          <source src="assets/video/promo.mp4" type="video/mp4" />
-        </video>
-
-        <div class="promo-info col-lg-7">
-          <h1>Welcome to GED (Global Engineering and Design) Consultants</h1>
-          <p class="intro">
-            We specialize in sectors like Oil & Gas, Petrochemicals, Refineries,
-            Power Plants, Water Treatment, Infrastructure, and more. Our
-            commitment to quality, safety, and innovation ensures we meet and
-            exceed client expectations on every project.
-          </p>
-          <p class="Offer">
-            Discover how our expertise can transform your project from concept
-            to completion.
-          </p>
-          <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        <div class="promo__items d-flex row">
+          <div class="promo-info col-lg-6 col-md-6 col-sm-3">
+            <h1>Welcome to Global Engineering and Design (GED) Consultants</h1>
+            <p>
+              At GED Consultants, we take pride in being a leading provider of
+              Engineering Design & Consultancy services since our establishment
+              in 2008. With a commitment to excellence, we offer a wide range of
+              engineering solutions across diverse industries, including Oil &
+              Gas, Petrochemicals, Refinery, Power Plants, Industrial and
+              Sanitary Treatment Plants, Water Treatment Plants, Water
+              Distribution Systems, Pumping Stations, Cross-Country Pipelines,
+              and Infrastructure facilities.
+            </p>
+            <p>
+              Explore our website to learn more about our services, projects,
+              and the value we can bring to your next venture. Contact us today
+              to discuss how GED Consultants can contribute to the success of
+              your project.
+              <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            </p>
+          </div>
+          <div class="promo-video col-lg-6 col-md-6 col-sm-3">
+            <video
+              id="background-video"
+              autoplay
+              loop
+              muted
+              poster="/assets/video/promo.mp4"
+            >
+              <source src="assets/video/promo.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
 
-      <section class="about_us">
+      <section class="about_us row">
         <p
-          class="about_us__info container"
+          class="about_us__info container col-lg-9"
           data-aos="zoom-in-right"
           data-aos-duration="500"
         >
-          GED Consultants, founded in 2008, delivers top-tier engineering
-          solutions across diverse sectors with expertise tailored to your
-          unique project requirements.
+          Our mission is to deliver innovative and sustainable engineering
+          solutions that meet the evolving needs of our clients while adhering
+          to the highest industry standards. With a team of experienced and
+          dedicated professionals, we aim to be your trusted partner in bringing
+          your projects to life, from concept to completion.
         </p>
+      </section>
+      <section class="what_we_do container">
+        <div class="slider row services">
+          <div class="card service_1 col-lg-4"><div class="text"></div></div>
+          <div class="card service_2 col-lg-4"><div class="text"></div></div>
+          <div class="card service_3 col-lg-4"><div class="text"></div></div>
+          <div class="card service_4 col-lg-4"><div class="text"></div></div>
+          <div class="card service_5 col-lg-4"><div class="text"></div></div>
+          <div class="card service_6 col-lg-4"><div class="text"></div></div>
+        </div>
       </section>
     </main>
     <footer></footer>
@@ -136,9 +159,47 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script src="/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="js/slick.min.js"></script>
     <script>
       AOS.init();
+
+      $(".slider").slick({
+        centerMode: true,
+        centerPadding: "60px",
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: "40px",
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
     </script>
   </body>
 </html>
