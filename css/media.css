@@ -28,6 +28,8 @@
   width: 100px;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  text-align: center;
+  font-size: 2rem;
 }
 .service_1 {
   background-image: url(/assets/img/1.jpg);
