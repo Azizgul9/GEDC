@@ -20,32 +20,3 @@
     font-size: 0.5rem;
   }
 }
-.card {
-  background-size: cover;
-}
-.text {
-  height: 240px;
-  width: 100px;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  text-align: center;
-  font-size: 2rem;
-}
-.service_1 {
-  background-image: url(/assets/img/1.jpg);
-}
-.service_2 {
-  background-image: url(/assets/img/2.jpg);
-}
-.service_3 {
-  background-image: url(/assets/img/3.jpg);
-}
-.service_4 {
-  background-image: url(/assets/img/4.jpg);
-}
-.service_5 {
-  background-image: url(/assets/img/5.jpg);
-}
-.service_6 {
-  background-image: url(/assets/img/6.jpg);
-}
