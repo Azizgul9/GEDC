@@ -94,8 +94,8 @@
     </header>
     <main class="main">
       <section class="promo container">
-        <div class="promo__items d-flex row">
-          <div class="promo-info col-lg-6 col-md-6 col-sm-3">
+        <div class="promo__items d-flex">
+          <div class="promo-info col-lg-6 col-md-6">
             <h1 class="text-uppercase">
               Welcome to Global Engineering and Design (GED) Consultants
             </h1>
@@ -116,13 +116,13 @@
               your project.
             </p>
           </div>
-          <div class="promo-video col-lg-6 col-md-6 col-sm-3">
+          <div class="promo-video col-lg-6 col-md-6">
             <video
               id="background-video"
               autoplay
               loop
               muted
-              poster="/assets/video/promo.mp4"
+              poster="/assets/video/cover.png"
             >
               <source src="assets/video/promo.mp4" type="video/mp4" />
             </video>
@@ -130,9 +130,9 @@
         </div>
       </section>
 
-      <section class="about_us row">
-        <p
-          class="about_us__info container col-lg-9"
+      <section class="about_us">
+        <div
+          class="about_us__info container"
           data-aos="zoom-in-right"
           data-aos-duration="500"
         >
@@ -141,25 +141,165 @@
           to the highest industry standards. With a team of experienced and
           dedicated professionals, we aim to be your trusted partner in bringing
           your projects to life, from concept to completion.
-        </p>
-      </section>
-
-      <section class="what_we_do container p-20">
-        <div class="slider row services">
-          <div class="card service_1 col-lg-4"><div class="text">1</div></div>
-          <div class="card service_2 col-lg-4"><div class="text">2</div></div>
-          <div class="card service_3 col-lg-4"><div class="text">3</div></div>
-          <div class="card service_4 col-lg-4"><div class="text"></div></div>
-          <div class="card service_5 col-lg-4"><div class="text"></div></div>
-          <div class="card service_6 col-lg-4"><div class="text"></div></div>
         </div>
       </section>
-
+      <section id="services" class="text-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 section-intro text-center">
+              <h4 class="text-uppercase py-4">Engineering Capabilities</h4>
+              <div class="divider"></div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-around g-4">
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/capabilities/architectual.jpg" alt="" />
+                  <div class="icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">Architectural Engineering</h5>
+                <p>
+                  Designing infrastructure projects including villas, hotels, office buildings, hospitals, schools, and more
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/capabilities/struchtural.jpg" alt="" />
+                  <div class="icon"><i class="fa-solid fa-folder-tree"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">Civil/Structural Engineering</h5>
+                <p>
+                  Completing projects with cost-effective designs tailored to schedule and budget requirements.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/promo.jpg" alt="" />
+                  <div class="icon"><i class="fa-solid fa-gears"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">Process/Mechanical Engineering</h5>
+                <p>
+                  Designing process equipment to meet industry codes and standards.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/capabilities/pyping.jpg" alt="" />
+                  <div class="icon"><i class="fa-solid fa-faucet"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">Piping System Design</h5>
+                <p>
+                  Designing piping systems per API, ASME, and NEMA codes.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/capabilities/fire.jpg" alt="" />
+                  <div class="icon"><i class="fa-solid fa-fire-extinguisher"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">HVAC/Plumbing/Fire Protection</h5>
+                <p>
+                  Designing systems for high-rise buildings, hospitals, laboratories, and more.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/capabilities/caidedd.jpg" alt="" />
+                  <div class="icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">Telecommunication Engineering</h5>
+                <p>
+                  Designing leak detection systems, CCTV, and fiber optics layouts.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/capabilities/mechanical.jpg" alt="" />
+                  <div class="icon"><i class="fa-solid fa-info"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">Materials/Procurement Support</h5>
+                <p>
+                  Project cost estimation, material take-offs, and procurement.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service">
+                <div class="service-img">
+                  <img src="assets/capabilities/caidedd.jpg" alt="" />
+                  <div class="icon"><i class="fa-brands fa-unity"></i></div>
+                </div>
+                <h5 class="mt-5 pt-4">Computer Aided Design & Drafting</h5>
+                <p>
+                  Using advanced CADD systems for drawing preparation and 3D modeling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="what_we_do container py-20">
+        <h6 class="services text-center text-uppercase">Our Services</h6>
+        <div class="slider row services">
+          <div class="card service_1 col-lg-3 m-2 border-0">
+            <div class="card__text">Feasibility Studies</div>
+          </div>
+          <div class="card service_2 col-lg-3 m-2 border-0">
+            <div class="card__text">Conceptual Design</div>
+          </div>
+          <div class="card service_3 col-lg-3 m-2 border-0">
+            <div class="card__text">Project Proposals</div>
+          </div>
+          <div class="card service_4 col-lg-3 m-2 border-0">
+            <div class="card__text">Detailed Design Engineering</div>
+          </div>
+          <div class="card service_5 col-lg-3 m-2 border-0">
+            <div class="card__text">Fabrication Drawings</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">Smart Plant P&ID's</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">3D Modeling (PDS & PDMS)</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">Smart Plant Instrumentation</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">Smart Plant Civil/Structural</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">Smart Plant Electrical</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">Project Cost Estimation</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">Procurement Support</div>
+          </div>
+          <div class="card service_6 col-lg-3 m-2 border-0">
+            <div class="card__text">As-Built Documentation</div>
+          </div>
+        </div>
+      </section>
       <section class="industries container">
-        <h6 class="text-center text-uppercase">
+        <h6 class="text-start text-uppercase p-20">
           Discover the Industries We Specialize In
         </h6>
-        <p>
+        <p class="col-md-4 col-lg-6 pt-2 pb-3">
           Global Engineering and Design (GED) Consultants prides itself on
           delivering comprehensive engineering solutions across a diverse range
           of industries. Our expertise spans from Oil & Gas to Infrastructure,
@@ -384,6 +524,74 @@
           </div>
         </div>
       </section>
+      <section class="why_chouse_us container mb-4">
+            <div class="row">
+              <div class="col-12 section-intro text-center">
+                <h4 class="py-4 text-uppercase">Why Choose GED Consultants?</h4>
+                <div class="divider"></div>
+              </div>
+            </div>
+            <div class="row gx-4 gy-5 text-center">
+              <div class="col-md-4 feature">
+                <div class="icon"><i class="fa-solid fa-fire "></i></div>
+                <h5 class="mt-4 mb-3">Industry Expertise</h5>
+                <p>With years of experience across multiple sectors, our team brings deep industry knowledge and technical excellence to every project.</p>
+              </div>
+              <div class="col-md-4 feature">
+                <div class="icon"><i class="fa-regular fa-circle-check "></i></div>
+                <h5 class="mt-4 mb-3">Tailored Solutions</h5>
+                <p>We understand the unique challenges of each industry and provide customized solutions that meet specific project requirements.</p>
+              </div>
+              <div class="col-md-4 feature">
+                <div class="icon"><i class="fa-solid fa-shield "></i></div>
+                <h5 class="mt-4 mb-3">Commitment to Quality</h5>
+                <p>Our focus on high quality, customer satisfaction, and confidentiality drives us to deliver exceptional results on every project.</p>
+              </div>
+              <div class="col-md-4 feature">
+                <div class="icon">
+                  <i class="fa-solid fa-gear "></i></div>
+                <h5 class="mt-4 mb-3">Cost-Effective Services</h5>
+                <p>We strive to offer solutions that are not only innovative and high-quality but also cost-effective, ensuring you get the best value for your investment.</p>
+              </div>
+              <div class="col-md-4 feature">
+                <div class="icon"><i class="fa-solid fa-business-time "></i></div>
+                <h5 class="mt-4 mb-3">Timely Delivery</h5>
+                <p>We are committed to delivering projects on time, adhering to strict schedules, and ensuring that all milestones are met without compromising on quality.</p>
+              </div>
+              <div class="col-md-4 feature">
+                <div class="icon"><i class="fa-regular fa-lightbulb "></i></div>
+                <h5 class="mt-4 mb-3">Innovative Approach</h5>
+                <p> We leverage the latest technologies and best practices to enhance efficiency, sustainability, and value for our clients.</p>
+              </div>
+            </div>
+            </div>
+      </section>
+      <section
+        style="background-image: url(/assets/img/1.jpg)"
+        class="bg-cover achievment"
+      >
+        <div class="overlay"></div>
+        <div class="container text-white text-center">
+          <div class="row py-2">
+            <div class="col-md-4 py-2" data-aos="zoom-in-up">
+              <i class="achievment__icon fa-solid fa-globe"></i>
+              <h4 class="mt-3 mb-2">15+</h1>
+              <p>Years of expirience</p>
+            </div>
+            <div class="col-md-4 py-2" data-aos="zoom-in-up">
+              <i class="achievment__icon fa-solid fa-layer-group"></i>
+              <h4 class="mt-3 mb-2">200+</h1>
+              <p>Projects Completed</p>
+            </div>
+            <div class="col-md-4 py-2" data-aos="zoom-in-up">
+              <i class="achievment__icon fa-regular fa-handshake"></i>
+              <h4 class="mt-3 mb-2">100+</h1>
+              <p>Fulfilled clients</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </main>
     <footer></footer>
     <script
@@ -408,9 +616,8 @@
         centerMode: true,
         centerPadding: "60px",
         slidesToShow: 3,
-        slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         responsive: [
           {
             breakpoint: 768,

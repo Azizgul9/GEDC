@@ -7,10 +7,11 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 :root {
-  --blue: #1068b3;
+  --blue: rgb(16, 104, 179);
   --white: #ffffff;
   --black: #000;
   --purple: #5652a8;
+  --grey: #cccccc;
 }
 
 body {
@@ -60,13 +61,17 @@ body {
 .promo {
   padding: 3% 0 5%;
 }
+.promo-items {
+  height: 70vh;
+}
 .promo-video {
   clip-path: circle(50% at 50% 50%);
 }
 #background-video {
   width: 100vh;
-  height: 70vh;
+  height: 100vh;
   object-fit: cover;
+  position: fixed;
   filter: grayscale(0.7);
 }
 .promo-info {
@@ -79,22 +84,11 @@ body {
   color: var(--blue);
 }
 .promo-info p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   position: relative;
-  height: 1.511111111111;
+  font-weight: 400;
 }
-.promo-info a {
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  font-size: 1.5rem;
-  font-weight: 100;
-  color: var(--black);
-  padding: 2%;
-  border: 0.5px solid #000;
-  text-decoration: none;
-  border-radius: 50%;
-}
+
 .about_us {
   background-color: var(--blue);
   text-align: center;
@@ -104,18 +98,42 @@ body {
   color: var(--white);
   font-family: "Space Grotesk", sans-serif;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .card {
   background-size: cover;
 }
-.text {
-  height: 240px;
-  width: 100px;
+.card__text {
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
   font-size: 2rem;
+  color: var(--white);
+  background-color: rgba(16, 104, 179, 0.1);
+}
+.service-img img {
+  width: 100%;
+  height: 200px;
+}
+.service .service-img {
+  position: relative;
+}
+.service .service-img .icon {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(to right, #011727, var(--blue));
+  color: #fff;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service .service-img .icon i {
+  font-size: 34px;
 }
 .service_1 {
   background-image: url(/assets/img/1.jpg);
@@ -134,4 +152,49 @@ body {
 }
 .service_6 {
   background-image: url(/assets/img/6.jpg);
+}
+.industries {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.industries h6 {
+  color: var(--blue);
+  font-size: 2rem;
+}
+.industries p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.feature .icon {
+  background: -webkit-linear-gradient(#011727, var(--blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 44px;
+}
+
+.achievment {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  z-index: 2;
+  position: relative;
+  font-size: 1.2rem;
+}
+.bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(var(--blue), rgba(1, 23, 39, 0.5));
+  /* background: linear-gradient(rgba(255, 159, 28, 0.7), rgba(247, 23, 53, 0.7)); */
+  z-index: -1;
+}
+.achievment__icon {
+  font-size: 44px;
 }
