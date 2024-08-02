@@ -102,14 +102,15 @@ body {
 }
 .card {
   background-size: cover;
+  height: 200px;
 }
 .card__text {
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: var(--white);
-  background-color: rgba(16, 104, 179, 0.1);
+  background: linear-gradient(to right, rgba(1, 23, 39, 0.5), var(--blue));
 }
 .service-img img {
   width: 100%;
@@ -197,4 +198,9 @@ body {
 }
 .achievment__icon {
   font-size: 44px;
+}
+
+.contacts {
+  padding-top: -20px;
+  padding-bottom: 20px;
 }
