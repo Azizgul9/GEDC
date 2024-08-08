@@ -90,7 +90,7 @@ body {
 }
 
 .about_us {
-  background-color: var(--blue);
+  background: -webkit-linear-gradient(var(--blue), rgba(1, 23, 39, 0.9));
   text-align: center;
 }
 .about_us__info {
@@ -136,24 +136,10 @@ body {
 .service .service-img .icon i {
   font-size: 34px;
 }
-.service_1 {
-  background-image: url(/assets/img/1.jpg);
+.card {
+  background-image: url(/assets/img/7.jpg);
 }
-.service_2 {
-  background-image: url(/assets/img/2.jpg);
-}
-.service_3 {
-  background-image: url(/assets/img/3.jpg);
-}
-.service_4 {
-  background-image: url(/assets/img/4.jpg);
-}
-.service_5 {
-  background-image: url(/assets/img/5.jpg);
-}
-.service_6 {
-  background-image: url(/assets/img/6.jpg);
-}
+
 .industries {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -199,8 +185,32 @@ body {
 .achievment__icon {
   font-size: 44px;
 }
-
+.footer {
+  background: -webkit-linear-gradient(#011727, var(--blue));
+  font-size: 16px;
+  padding: 20px 0 10px;
+  color: #fff;
+}
+.footer .nav-link {
+  color: #fff;
+  padding: 2px 0;
+}
 .contacts {
-  padding-top: -20px;
   padding-bottom: 20px;
+}
+.contacts p {
+  padding: 2px;
+  margin: 0;
+}
+.socials a {
+  padding: 0 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.socials a:hover {
+  color: #6c67af;
+}
+.terms {
+  margin-top: 20px;
+  font-size: 10px;
 }
