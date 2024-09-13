@@ -222,10 +222,13 @@ body {
   margin-bottom: 30px;
 }
 
-#projects h2 {
-  color: #333;
+#projects h4 {
+  text-transform: uppercase;
   font-size: 2rem;
   margin-bottom: 20px;
+}
+#projects h6 {
+  font-size: 1.5rem;
 }
 
 #projects p {
@@ -233,34 +236,6 @@ body {
   font-size: 1rem;
   margin-bottom: 20px;
 }
-
-#projects ul {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-#projects ul li {
-  margin-bottom: 10px;
-  color: #444;
-}
-
-#projects ul li strong {
-  color: #333;
-}
-
-#projects a.button {
-  display: inline-block;
-  background-color: #0066cc;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-#projects a.button:hover {
-  background-color: #0055a3;
-}
-
 /* Careers Section */
 #careers {
   background-color: #fff;
@@ -270,7 +245,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#careers h2 {
+#careers h3 {
   color: #333;
   font-size: 2rem;
   margin-bottom: 20px;
