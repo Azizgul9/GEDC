@@ -111,8 +111,10 @@ body {
   color: var(--white);
   background: linear-gradient(to right, rgba(1, 23, 39, 0.5), var(--blue));
 }
-.Services h6{
-font-size: 2rem;
+.services__title{
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .service-img img {
   width: 100%;
@@ -227,7 +229,7 @@ font-size: 2rem;
 
 #projects h4 {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 #projects h6 {
